@@ -4,7 +4,7 @@ A modern dog adoption platform built with React + TypeScript + Tailwind CSS.
 Users can log in, browse adoptable dogs by breed, save favorites, and find their perfect match.
 
 ### 🔗 Live Site
-[👉 Visit the App](https://your-deployment-url.com)
+[👉 Visit the App](https://fetch-dog-app-iota.vercel.app/)
 
 ---
 
