@@ -1,54 +1,53 @@
-# React + TypeScript + Vite
+# 🐶 Fetch Dog Adoption App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern dog adoption platform built with React + TypeScript + Tailwind CSS.  
+Users can log in, browse adoptable dogs by breed, save favorites, and find their perfect match.
 
-Currently, two official plugins are available:
+### 🔗 Live Site
+[👉 Visit the App](https://your-deployment-url.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ✅ Login with name & email (auth via cookie)
+- ✅ Browse dogs by breed
+- ✅ Sort alphabetically (A→Z / Z→A)
+- ✅ Pagination (12 per page)
+- ✅ Save favorites & generate a match
+- ✅ Responsive UI built with Tailwind
+- ✅ Deployed & hosted online
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🧪 Tech Stack
+
+- React + TypeScript
+- Tailwind CSS
+- Axios for API requests
+- React Router
+- Vite for fast development
+- Hosted on Vercel (or Netlify)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/fetch-dog-app.git
+cd fetch-dog-app
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 3. Start the dev server
+
+```bash
+npm run dev
 ```
